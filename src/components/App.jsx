@@ -63,18 +63,18 @@ class App extends Component {
     // console.log("ev: ", ev);
     // console.log("source: ", ev.target.innerText);
     if (ev.target.innerText === "Good") {
-      this.setState((state, props) => ({
-        good: state.good + 1,
+      this.setState((prevState) => ({
+        good: prevState.good + 1,
       }));
     }
     if (ev.target.innerText === "Neutral") {
-      this.setState((state, props) => ({
-        neutral: state.neutral + 1,
+      this.setState((prevState) => ({
+        neutral: prevState.neutral + 1,
       }));
     }
     if (ev.target.innerText === "Bad") {
-      this.setState((state, props) => ({
-        bad: state.bad + 1,
+      this.setState((prevState) => ({
+        bad: prevState.bad + 1,
       }));
     }
   };
