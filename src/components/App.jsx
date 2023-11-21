@@ -60,8 +60,8 @@ class App extends Component {
 
   hdrInc = (ev) => {
     ev.preventDefault();
-    console.log("ev: ", ev);
-    console.log("source: ", ev.target.innerText);
+    // console.log("ev: ", ev);
+    // console.log("source: ", ev.target.innerText);
     if (ev.target.innerText === "Good") {
       this.setState((state, props) => ({
         good: state.good + 1,
